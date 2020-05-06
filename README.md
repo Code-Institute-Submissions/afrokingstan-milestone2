@@ -26,7 +26,7 @@ This project is divided into 3 sections with different goals.
 - Features for the future - Festivo API or any API that can give users information about public holidays and specific festival details for various holiday destination.
 
 ### Features Left to Implement
-- Another feature idea
+- Another feature idea would be to provide users an easier way to select and save holiday packages before redirecting to third party website. And also a feature that allows users to send to themselves their saved holiday packages and searches.
 
 ## Technologies Used
 
@@ -34,48 +34,67 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
-
-
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - The project uses **Javascript** to simplify DOM manipulation.
+- [HTML](https://www.w3schools.com/)
+    - The project uses **HTML** to diplay text on web browser.
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+    - The project uses **CSS** to simplify DOM manipulation.    
+- [Bootstrap](https://getbootstrap.com/)
+    - The project uses **Javascript** to simplify DOM manipulation.
+- [Fontawesome](https://fontawesome.com/)
+    - The project uses **Fontawesome** to simplify visual illustration.
+- [Google Api](https://cloud.google.com/maps-platform/)
+    - The project uses **Google API** to display google maps on the wesite.
+- [rapidapi](https://rapidapi.com/)
+    - The project uses **rapidapi** to simplify DOM manipulation.    
 ## Testing
+I tested my codes on google chrome console, w3.org validator and jasmine  for error. At every stage of development this project was tested for errors and bugs were found and fixed. Particularly javascript try and catch codes was effectively used. 
+
+External user test was perform by listing the unique expectations of users A and B and providing access to text the project was capable of delivering and for them to provide feedback.
+USER A - test
+1. maps form found on index page:
+    1. Go to the "index" page
+    2. Try to submit the empty form and verify that an error message about the required fields appears
+    3. Try to submit the form with an invalid input like a number and verify that a relevant error message appears
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
+    5. Try to select different attractions and submit form verify that new data appears.
+
+USER B - test
+1. Reviews page:
+    1. Go to the "reviews" page
+    2. Try a new selection on the 3 featured destinations and verify that new information is presented
+    3. Try to click on read more button and verify that you are redirected on a new tab to tripadvisor site specific to that     establishment.
+    4. Try to click on post review button and verify that you are redirected on a new tab to tripadvisor site specific to that establishment where you can leave a new rating and review.
+    
+After I received both feedbacks I implemented changes inaccordance to the feedbacks I received and another test was carried out to verify changes. Finally user A and B suggested new features that has now been listed as feaures to implement for the future. However, i was able to adapt the project design to provide an easy and sensible way for users A and B to achieve their goals for example i ensure that the index page was now the maps page and i added the hotels page as per user B feedback. 
+
+Interesting Bugs were Uncaught typeError: cannot read 'images' of undefined. I didnt understand howthe error came about but after much research i found the source. yet i had no solution so i dicided to research futher and i resolved it with a condition statement. 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+I fully worked on my project on visual studio codes and I deployed my project on GitHub Pages through file upload.
+I backed up all project files on one drive through the course of this project.
+I ran my codes locally on my pc on several web browsers (Google chrome and Edge).
 
 
 ## Credits
-
+Credit goes to all those who supported and continously encouraged me even when i felt i could give up, especially during my battles with COVID-19.
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
+- The icons used for entire project was copied from [fontawesome](https://fontawsome.com)
+- The text/images for the reviews/hotels page was provided from the [Tripadvisor API](https://rapidapi.com/apidojo/api/tripadvisor1)
+- The text for the Flights page was provided from the [Skyscanner API](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
+- The images found the the flights page were rights free and copied from the [Pixabay](https://pixabay.com)https://codepen.io/amandalouise/pen/PNzeGx?editors=1111
+- The datepicker found the the flights page were rights free and copied from the [colorlib.com](https://colorlib.com/wp/bootstrap-datepicker/?v=79cba1185463)
 ### Media
-- The photos used in this site were obtained from ...
-
+- The photos used in this site were obtained from 
+- [PIXABAY - harubaba](https://pixabay.com/photos/cape-town-table-mountain-111397/)
+- [Pixbay - pelephoto](https://pixabay.com/photos/animal-beach-kangaroo-kangaroo-5048843/)
+- [Pixbay - james3214](https://pixabay.com/photos/grand-cayman-swimming-pool-summer-298080/)
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from skyscanner and trpiadvisor website.
