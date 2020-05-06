@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--Bootstrap CDN Link-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- End of Bootstrap CDN Link-->
+      <!-- stylesheet Link-->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <title>HOLIDAY SPOTTER|hotels</title>
+   </head>
+   <body>
+      <header class="text-uppercase">
+         <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
+            <!-- Brand/logo -->
+            <a class="navbar-brand mb-0 h1" href="#">HOLIDAY Spotter</a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="flights.html">Flights</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="hotels.html">Hotels</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <!-- End of NavBar -->
+      </header>
+      <div role="main">
+         <section class="jumbotron text-center">
+            <div class="container mt-4">
+               <h1 class="jumbotron-heading">Featured Holiday Cities</h1>
+               <p class="lead text-muted">See hotel rankings and ratings. find out which one could be your next holiday destination. </p>
+               <p>
+                  <button class="btn btn-primary my-2" id="myFeaturedHol1">Cape Town South Africa</button>
+                  <button class="btn btn-secondary my-2"  id="myFeaturedHol2">Montego Bay Jamaica</button>
+                  <button class="btn btn-secondary my-2"  id="myFeaturedHol3" value="255100">Melbourne Australia</button>
+               </p>
+            </div>
+         </section>
+         <div class="container">
+            <div class="row card-deck" id="holder">
+               <!--Api data is presented here-->
+            </div>
+         </div>
+      </div>
+      <footer class="text-muted">
+         <div class="container">
+            <p class="float-right">
+               <a href="#">Back to top</a>
+            </p>
+            <p>Copyright &copy; 2020</p>
+            <p class="float-left"><a href="#">Contact </a>
+               <a href="#">Terms and Conditions </a>
+               <a href="#">Sponsors</a>
+            </p>
+         </div>
+      </footer>
+      <!--javascript-->
+      <script src="assets/js/changebutton.js"></script>
+      <script src="assets/js/hotels.js"></script>
+   </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="fa-events-icons-ready">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--Bootstrap CDN Link-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <!-- stylesheet Link-->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <title>HOLIDAY SPOTTER|Home</title>
+   </head>
+   <body>
+      <header class="text-uppercase">
+         <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
+            <!-- Brand/logo -->
+            <a class="navbar-brand mb-0 h1" href="index.html">HOLIDAY Spotter</a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="index.html"><i class="fas fa-home"></i></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="flights.html">Flights</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="hotels.html">Hotels</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <!-- End of NavBar -->
+      </header>
+      <div role="main">
+         <section class="jumbotron text-center">
+            <div class="container mt-4">
+               <h1 class="jumbotron-heading">Find Your Next Holiday Destination</h1>
+               <p class="lead text-muted">Use the free map to get up-to-date information about your next Holiday</p>
+               <!--Start of form-->
+               <div class="form-check form-check-inline d-flex justify-content-center">
+                  Select:  
+                  <div class="custom-control custom-radio custom-control mr-1 ml-1">
+                     <input type="radio" id="attractBtn" name="RadioBtn" class="custom-control-input" checked>
+                     <label class="custom-control-label" for="attractBtn">Attractions</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control mr-1 ml-1">
+                     <input type="radio" id="hotelsBtn" name="RadioBtn" class="custom-control-input">
+                     <label class="custom-control-label" for="hotelsBtn">Hotels</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control ml-1">
+                     <input type="radio" id="restauBtn" name="RadioBtn" class="custom-control-input">
+                     <label class="custom-control-label" for="restauBtn">Restaurants</label>
+                  </div>
+               </div>
+               <div class="input-group flex-wrap">
+                  <input type="text" class="form-control" aria-label="Text input with dropdown button" id="autocomplete" placeholder="Enter a city">
+                  <select class="custom-select" id="country" onchange="myNewsearch()">
+                     <option value="all">All</option>
+                     <option value="au">Australia</option>
+                     <option value="br">Brazil</option>
+                     <option value="ca">Canada</option>
+                     <option value="fr">France</option>
+                     <option value="de">Germany</option>
+                     <option value="mx">Mexico</option>
+                     <option value="nz">New Zealand</option>
+                     <option value="it">Italy</option>
+                     <option value="za">South Africa</option>
+                     <option value="es">Spain</option>
+                     <option value="pt">Portugal</option>
+                     <option value="us" selected>U.S.A.</option>
+                     <option value="uk">United Kingdom</option>
+                  </select>
+                  <div class="input-group-append">
+                     <button class="btn btn-outline-secondary" type="button" onclick="search()">Search Map</button>
+                  </div>
+               </div>
+               <!--end of form-->
+            </div>
+         </section>
+      </div>
+      <!--start map and data display div-->
+      <div class="container-fluid" >
+         <div class="ml-3 w-auto" id="listing">
+            <table id="resultsTable">
+               <tbody id="results"></tbody>
+            </table>
+         </div>
+         <div class="w-100" id="map"></div>
+      </div>
+      <!-- end of map and data div-->
+      <!-- start of hidden div that is shown to display individual information about each place found on the map updated by maps.js-->
+      <div class="d-none">
+         <div id="info-content" >
+            <table>
+               <tr id="iw-url-row" class="iw_table_row">
+                  <td id="iw-icon" class="iw_table_icon"></td>
+                  <td id="iw-url"></td>
+               </tr>
+               <tr id="iw-address-row" class="iw_table_row">
+                  <td class="iw_attribute_name">Address:</td>
+                  <td id="iw-address"></td>
+               </tr>
+               <tr id="iw-phone-row" class="iw_table_row">
+                  <td class="iw_attribute_name">Telephone:</td>
+                  <td id="iw-phone"></td>
+               </tr>
+               <tr id="iw-rating-row" class="iw_table_row">
+                  <td class="iw_attribute_name">Rating:</td>
+                  <td id="iw-rating"></td>
+               </tr>
+               <tr id="iw-website-row" class="iw_table_row">
+                  <td class="iw_attribute_name">Website:</td>
+                  <td id="iw-website"></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <!-- end of hidden div that is shown to display individual information about each place found on the map-->
+      <footer class="text-muted">
+         <div class="container">
+            <p class="float-right">
+               <a href="#">Back to top</a>
+            </p>
+            <p>Copyright &copy; 2020</p>
+            <p class="float-left"><a href="#">Contact </a>
+               <a href="#">Terms and Conditions </a>
+               <a href="#">Sponsors</a>
+            </p>
+         </div>
+      </footer>
+      <!-- google api with key-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4HKX7FKfle561CkQYfKKFF_0jg1OCb50&libraries=places&callback=initMap"
+         async defer></script>
+      <!-- external javascript-->
+      <script src="assets/js/maps.js"></script>
+   </body>
