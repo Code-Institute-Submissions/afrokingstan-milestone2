@@ -5,14 +5,11 @@ to find more information about their potential holiday and estimated flight cost
 I displayed all information in a visually appealing and userfriendly manner.
  
 ## UX
- 
 User A- As a delivery driver based in USA, I am very familiar with google maps when i am looking for a place and directions.I will like to do the same or similar when I am search for my next holiday destination. 
 User B- As a low income earner in the U.K, I always plan my holiday my self i want know more about holiday hotspots and the average cost of flight so that i can plan my holiday myself and estimate the true value of my money.
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 This project is divided into 3 sections with different goals.
 - Site owner's goal: to ensure that the site is easy to navigate, display information in a friendly manner and finally to possibly allow users to choose a travel package from third party website.
 - External users goal : to find out best holiday destination for their needs. this is to be supported by reviews of pervious travellers to various holiday cities and their star ratings as well as google star ratings.
@@ -29,8 +26,6 @@ This project is divided into 3 sections with different goals.
 - Another feature idea would be to provide users an easier way to select and save holiday packages before redirecting to third party website. And also a feature that allows users to send to themselves their saved holiday packages and searches.
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
@@ -71,12 +66,8 @@ After I received both feedbacks I implemented changes inaccordance to the feedba
 
 Interesting Bugs were Uncaught typeError: cannot read 'images' of undefined. I didnt understand howthe error came about but after much research i found the source. yet i had no solution so i dicided to research futher and i resolved it with a condition statement. 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 I fully worked on my project on visual studio codes and I deployed my project on GitHub Pages through file upload.
 I backed up all project files on one drive through the course of this project.
 I ran my codes locally on my pc on several web browsers (Google chrome and Edge).
