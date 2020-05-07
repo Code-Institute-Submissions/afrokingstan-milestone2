@@ -79,8 +79,8 @@ Credit goes to all those who supported and continously encouraged me even when i
 - The icons used for entire project was copied from [fontawesome](https://fontawsome.com)
 - The text/images for the reviews/hotels page was provided from the [Tripadvisor API](https://rapidapi.com/apidojo/api/tripadvisor1)
 - The text for the Flights page was provided from the [Skyscanner API](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
-- The images found the the flights page were rights free and copied from the [Pixabay](https://pixabay.com)https://codepen.io/amandalouise/pen/PNzeGx?editors=1111
-- The datepicker found the the flights page were rights free and copied from the [colorlib.com](https://colorlib.com/wp/bootstrap-datepicker/?v=79cba1185463)
+- The images found on the the flights page were rights free and copied from the [Pixabay](https://pixabay.com)
+- The datepicker found on the the flights page were rights free and copied from the [colorlib.com](https://colorlib.com/wp/bootstrap-datepicker/?v=79cba1185463)
 ### Media
 - The photos used in this site were obtained from 
 - [PIXABAY - harubaba](https://pixabay.com/photos/cape-town-table-mountain-111397/)
